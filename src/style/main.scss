@@ -196,4 +196,13 @@ body {
         color: $orange;
         font-weight: bold;
     }
+
+    &__copy-right {
+        display: flex;
+        gap: .5rem
+    }
+
+    &__logo {
+        display: inline;
+    }
 }
