@@ -1,1 +1,306 @@
-*,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role=list],ol[role=list]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.8}a:not([class]){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}@media(prefers-reduced-motion: reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{-webkit-animation-duration:.01ms !important;animation-duration:.01ms !important;-webkit-animation-iteration-count:1 !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}body{background-image:url(../images/main-bg.jpg);background-repeat:repeat;font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;max-width:100vw}.header{background-color:#db0a5a;background-image:url(../images/head-bg.jpg);background-repeat:no-repeat}.header__bar{display:flex;justify-content:space-between;padding:1.5em}.header__social{margin-left:auto;margin-right:50px;padding:0;align-self:center}.header__social i{color:#e67300;padding:.5rem;margin-right:.5rem;text-align:center;outline:2px solid #e67300;border-radius:50%}.header__social i:hover{opacity:75%}.header__social .fa-brands{width:3rem;height:3rem}.nav__list{display:flex;justify-content:space-evenly}.nav__item{font-size:1.2rem;font-weight:700;list-style:none;padding-bottom:1em}.nav__item a{text-decoration:none;color:#fff}.nav__item a:hover{color:#fb8d6f}.hero{text-align:center;margin-top:-1em}.hero__img{width:100vw}.cta{background-color:#e67300;color:#fff;text-align:center;justify-content:center;display:flex}.cta__box{width:40%;padding:3em;max-width:1100px}.cta__link,.programs__btn{color:#fff;text-decoration:none;display:flex;justify-content:center;gap:.5rem}.quality{display:flex;justify-content:space-around;margin:5rem auto;max-width:1100px}.quality__cta{width:50%;text-align:center}.quality .cta__title{color:#db0a5a;font-size:2rem}.quality .cta__btn{background-color:#db0a5a;color:#fff;font-weight:600;border:none;outline:none;padding:.5em 3em;margin-top:1rem;border-radius:5px;transition:background-color 500ms;cursor:pointer}.quality .cta__btn:hover,.quality .cta__btn:focus{background-color:#e67300}.location{display:flex;align-items:center;justify-content:center;max-width:1100px;margin:3em auto}.location__programs{background-color:#e7dad5;text-align:center;padding:2em;width:45%}.programs__title{color:#db0a5a}.programs__text{margin:1em 0}.programs__btn{color:#e67300;font-weight:600}.socials{background-image:url(../images/footer-bg.jpg);background-repeat:no-repeat;background-size:cover;height:100px}.footer{background-color:#db0a5a;color:#fff;padding:1.5em;display:flex;justify-content:space-around}.footer__link{color:#fff;text-decoration:none}.footer span{color:#e67300;font-weight:bold}.footer__copy-right{display:flex;gap:.5rem}.footer__logo{display:inline}/*# sourceMappingURL=main.css.map */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.8;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* fonts */
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url(../src/fonts/GothamRoundedMedium_21022.ttf) format("embedded-opentype");
+  unicode-range: U+0-7F;
+}
+
+/* @font-face {
+  font-family: 'Gotham Rounded';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../src/fonts/GothamRoundedMedium_21022.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
+
+/* @font-face {
+  font-family: "Gotham Rounded";
+  src: url("../src/fonts/Gotham-Rounded-Medium.otf") format("otf"),
+  url("Gotham Rounded.woff") format("woff"),
+  url("Gotham Rounded.ttf") format("truetype");
+} */
+
+body {
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Gotham Rounded', serif; */
+  max-width: 100vw;
+}
+
+.header {
+  background-color: hsl(337deg, 91%, 45%);
+  background-image: url(../images/head-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.header__social {
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 0;
+  align-self: center;
+}
+
+.header__social i {
+  color: hsl(30deg, 100%, 45%);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  outline: 2px solid hsl(30deg, 100%, 45%);
+  border-radius: 50%;
+}
+
+.header__social i:hover {
+  opacity: 75%;
+}
+
+.header__social .fa-brands {
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav__item {
+  font-size: 1.2rem;
+  font-weight: 700;
+  list-style: none;
+  padding-bottom: 1em;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__item a:hover {
+  color: hsl(13deg, 95%, 71%);
+}
+
+.hero {
+  text-align: center;
+  margin-top: -1em;
+}
+
+.hero__img {
+  width: 100vw;
+}
+
+.cta {
+  background-color: hsl(30deg, 100%, 45%);
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cta__box {
+  width: 40%;
+  padding: 3.5em;
+  max-width: 1200px;
+}
+
+.cta__title {
+  font-size: 2rem;
+}
+
+.cta__link, .programs__btn {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quality {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.quality__cta {
+  width: 50%;
+  text-align: center;
+}
+
+.quality .cta__title {
+  color: hsl(337deg, 91%, 45%);
+  font-size: 2rem;
+}
+
+.quality .cta__btn {
+  background-color: hsl(337deg, 91%, 45%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 0.5em 3em;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: background-color 500ms;
+  cursor: pointer;
+}
+
+.quality .cta__btn:hover, .quality .cta__btn:focus {
+  background-color: hsl(30deg, 100%, 45%);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 3em auto;
+}
+
+.location__programs {
+  background-color: hsl(17deg, 28%, 87%);
+  text-align: center;
+  padding: 2em;
+  width: 45%;
+}
+
+.programs__title {
+  color: hsl(337deg, 91%, 45%);
+}
+
+.programs__text {
+  margin: 1em 0;
+}
+
+.programs__btn {
+  color: hsl(30deg, 100%, 45%);
+  font-weight: 600;
+}
+
+.socials {
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+
+.footer {
+  background-color: hsl(337deg, 91%, 45%);
+  color: #fff;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer span {
+  color: hsl(30deg, 100%, 45%);
+  font-weight: bold;
+}
+
+.footer__copy-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__logo {
+  display: inline;
+}/*# sourceMappingURL=main.css.map */

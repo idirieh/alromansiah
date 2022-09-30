@@ -78,13 +78,14 @@ body {
 }
 
 .cta {
-    background-color: $orange;
-    color: #fff;
+    background-color: red;
+    color: #fff;    
+}
 
-    text-align: center;
-    justify-content: center;
+.wrapper {
     display: flex;
-    
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .cta__box {
